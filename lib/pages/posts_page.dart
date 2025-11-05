@@ -23,7 +23,7 @@ class _PostsPageState extends State<PostsPage> {
   static const int _pageSize = 10;
   bool _hasMoreData = true;
 
-  // Multiple selection state
+  // Multiple selection
   bool _isSelectionMode = false;
   Set<int> _selectedIds = {};
   final Set<int> _localPostIds = {};
@@ -48,7 +48,7 @@ class _PostsPageState extends State<PostsPage> {
     final maxScroll = _scrollController.position.maxScrollExtent;
     final currentScroll = _scrollController.offset;
 
-    // Show/hide scroll to top button
+    //scroll to top button
     if (currentScroll > 300 && !_showScrollToTopButton) {
       setState(() {
         _showScrollToTopButton = true;
@@ -59,7 +59,7 @@ class _PostsPageState extends State<PostsPage> {
       });
     }
 
-    // Load more when scroll to 80%
+    // Load more
     if (currentScroll >= (maxScroll * 0.8) &&
         !_isLoadingMore &&
         _hasMoreData &&

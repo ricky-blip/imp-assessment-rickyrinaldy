@@ -19,7 +19,6 @@ class _SplashScreenState extends State<SplashScreen>
   void initState() {
     super.initState();
 
-    // Animation setup
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 2),
@@ -36,7 +35,6 @@ class _SplashScreenState extends State<SplashScreen>
 
     _controller.forward();
 
-    // Delay to next page
     Timer(const Duration(seconds: 3), () {
       if (mounted) {
         Navigator.of(context).pushReplacement(
@@ -71,7 +69,6 @@ class _SplashScreenState extends State<SplashScreen>
         ),
         child: Stack(
           children: [
-            // Animated logo and text
             Center(
               child: FadeTransition(
                 opacity: _fadeAnimation,
@@ -102,8 +99,6 @@ class _SplashScreenState extends State<SplashScreen>
                 ),
               ),
             ),
-
-            // Footer
             Positioned(
               bottom: 32,
               left: 0,

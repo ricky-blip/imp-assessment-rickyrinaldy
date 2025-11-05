@@ -117,7 +117,6 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       const SizedBox(height: 40),
-                      // Username Field - FIXED
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
@@ -157,7 +156,6 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       const SizedBox(height: 16),
-                      // Password Field - FIXED
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.white,

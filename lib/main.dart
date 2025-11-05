@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
 
 import 'package:imp_assessment_flutter_dev/pages/splash_screen_page.dart';
 import 'package:imp_assessment_flutter_dev/pages/login_page.dart';

@@ -23,7 +23,7 @@ class ApiService {
     String body,
   ) {
     debugPrint('═══════════════════════════════════════');
-    debugPrint('📥 API RESPONSE');
+    debugPrint('API RESPONSE');
     debugPrint('═══════════════════════════════════════');
     debugPrint('Endpoint: $endpoint');
     debugPrint('Status Code: $statusCode');
